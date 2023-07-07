@@ -80,8 +80,8 @@ const Content: React.FC = () => {
       <div className="px-2">
         <div className="menu rounded-box w-56 bg-base-100 p-2">
           {topics?.map((topic) => (
-            <div className="flex flex-wrap justify-between">
-              <p key={topic.id}>
+            <div className="flex flex-wrap justify-between" key={topic.id}>
+              <p>
                 <a
                   href="#"
                   onClick={(evt) => {
