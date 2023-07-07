@@ -76,7 +76,7 @@ const Content: React.FC = () => {
   });
 
   return (
-    <div className="mx-5 mt-5 grid grid-cols-4 gap-2">
+    <div className="mx-5 mt-5 lg:grid lg:grid-cols-4 gap-2">
       <div className="px-2">
         <div className="menu rounded-box w-56 bg-base-100 p-2">
           {topics?.map((topic) => (

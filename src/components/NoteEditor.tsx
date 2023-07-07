@@ -17,9 +17,9 @@ export const NoteEditor = ({
                 <h2 className='card-title'>
                     <input type='text' placeholder='Insert the title of note' className='input-primary input input-md w-full font-bold' value={title} onChange={(e) => setTitle(e.currentTarget.value)}/>
                 </h2>
-                <ReactCodeMirror value={text} width='500px' height='30vh' minWidth='100%' minHeight='30vh' extensions={[
+                <ReactCodeMirror value={text} height='30vh' minWidth='100%' minHeight='30vh' extensions={[
                     markdown({base: markdownLanguage, codeLanguages: languages})
-                ]} onChange={(value) => setText(value)} className='border border-slate-300'/>
+                ]} onChange={(value) => setText(value)} className='border border-slate-300 w-full'/>
             </div>
             <div className='card-actions justify-end'>
                 <button onClick={() => {
